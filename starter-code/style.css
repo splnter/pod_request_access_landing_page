@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+}
+
+main {
+    background-color: #121725;
+    padding-top: 6.875rem;
+    padding-bottom: 6.875rem;
+}
+
+.hero {
+    position: relative;
+    background-image: url(./assets/desktop/image-host.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    height: 40rem;
+    
+}
+
+.brand {
+    position: absolute;
+    top: -5%;
+    margin-left: 10.125rem;
+}
+
+.content {
+    background-color: #121725;
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    margin-left: 10.125rem;
+    padding-top: 6.25rem;
+}
+
+.heading {
+    font-size: 3.25rem;
+    line-height: 3.875rem;
+    text-transform: uppercase;
+    color: #54E6AF;
+    padding-bottom: 2.5rem;
+}
+
+.heading span {
+    color: #FFF;
+}
+
+.intro {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #C2CBE5;
+    max-width: 27.5rem;
+    display: inline-block;
+    margin-bottom: 2.8rem;
+}
+
+form {
+    width: 27.5rem;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    border-radius: 1.75rem;
+    background-color: #2C344B;
+    height: 3.5rem;
+    color: hsla(0, 0%, 100%, 50%);
+    border: none;
+    /* margin-top: 2.8rem;
+    margin-bottom: 3.75rem; */
+    padding-left: 2.2rem;
+    font-weight: 700;
+    
+}
+
+button {
+    position: absolute;
+    right: 1.1%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 1.75rem;
+    height: 2.95rem;
+    width: 33%;
+    border: none;
+    background-color: #54E6AF;
+    color: #121725;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.social-trust {
+    margin-top: 3.75rem;
+}
+
+.social-trust img:not(:last-of-type) {
+    margin-right: 2.5rem;
+}
+
+.pattern {
+    position: absolute;
+    bottom: -9%;
+    right: 0;
+}
