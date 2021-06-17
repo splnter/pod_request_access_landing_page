@@ -11,6 +11,7 @@ main {
     background-color: #121725;
     padding-top: 6.875rem;
     padding-bottom: 6.875rem;
+    height: 100vh;
 }
 
 .hero {
@@ -39,6 +40,7 @@ main {
 
 .heading {
     font-size: 3.25rem;
+    font-weight: 400;
     line-height: 3.875rem;
     text-transform: uppercase;
     color: #54E6AF;
@@ -122,3 +124,34 @@ button:hover {
     bottom: -9%;
     right: 0;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 5%;
+    }
+
+    .hero {
+        height: 75%;
+        background-image: url(./assets/tablet/image-host.jpg);
+    }
+
+    .content {
+        width: 90%;
+        padding-top: 4.25rem;
+        margin-left: 0;
+        left: 0;
+
+    }
+
+    .brand {
+        top: 5%;
+        margin-left: 0;
+    }
+
+    .pattern {
+        bottom: -33%;
+        left: 0;
+    }
+} 
