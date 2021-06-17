@@ -33,8 +33,9 @@
 
           <form action="">
             <input type="email" placeholder="Email address" name="" id="">
-            <button type="submit">request access</button>
+            <button id="button" type="submit">request access</button>
           </form>
+          <span id="message"></span>
 
           <div class="social-trust">
             <img src="./assets/desktop/spotify.svg" alt="Spotify logo">
@@ -53,6 +54,30 @@
     </section>
 
   </main>
+
+  <script>
+
+    const message = document.getElementById('message'); 
+    const button = document.getElementById('button');
+
+    button.addEventListener('click', emailIsValid)
+
+    function emailIsValid(e) {
+      e.preventDefault()
+      const userInput = document.querySelector('input').value;
+      console.log(userInput);
+
+      const pattern = new RegExp('^.*@.*\..*$');
+      const testUserInput = pattern.test(userInput)
+      console.log(testUserInput);
+
+      if(!testUserInput) {
+        message.textContent = `Oops! Please check your email`;
+      }
+        
+      }
+
+  </script>
  
 </body>
 </html>

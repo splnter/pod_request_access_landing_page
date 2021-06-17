@@ -73,8 +73,11 @@ input {
     /* margin-top: 2.8rem;
     margin-bottom: 3.75rem; */
     padding-left: 2.2rem;
-    font-weight: 700;
-    
+    font-weight: 700;   
+}
+
+input:focus {
+    color: hsl(0, 0%, 100%);
 }
 
 button {
@@ -90,6 +93,20 @@ button {
     color: #121725;
     text-transform: capitalize;
     font-weight: 700;
+}
+
+button:hover {
+    background-color: #B3FFE2;
+}
+
+#message {
+    color: #FB3E3E;
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin-left: 2.2rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    height: fit-content;    
 }
 
 .social-trust {
